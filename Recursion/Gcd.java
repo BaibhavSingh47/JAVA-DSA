@@ -15,3 +15,12 @@ public class Gcd {
         System.out.println(gcd(20,120));
     }
 }
+ 
+
+class Solution {
+    public static int gcd(int a, int b) {
+        if (a == 0)
+            return b;
+        return gcd(b % a, a);
+    }
+}
