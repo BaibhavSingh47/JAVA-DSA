@@ -9,9 +9,9 @@ class ComplexNumber {
         this.y = y;
     }
 
-    ComplexNumber() {
+    // ComplexNumber() {
 
-    }
+    // }
 
     void print() {
         if (y >= 0)
@@ -31,7 +31,8 @@ class ComplexNumber {
     }
 
     void divide(ComplexNumber z) {
-
+        x=(x*z.x+y*z.y)/(z.x*z.x+z.y*z.y);
+        y= (y * z.x - x* z.y) / (z.x * z.x + z.y * z.y);
     }
 }
 
@@ -47,5 +48,6 @@ public class ComplexNumberClass {
         z2.multiply(z1);
         z1.print();
         z2.print();
+        z2.divide(z2);
     }
 }
