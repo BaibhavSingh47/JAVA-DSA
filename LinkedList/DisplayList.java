@@ -43,7 +43,7 @@ public class DisplayList {
 
     private static int get(Node head, int idx) {
         Node temp = head;
-        for (int i = 1; i <= idx; i++) {
+        for (int i = 1; i <= idx; i++) {  
             temp = temp.next;
         }
         return temp.val;
