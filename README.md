@@ -41,6 +41,7 @@ JAVA-DSA/
 ├── OOPS/
 ├── Recursion/
 ├── Strings/
+├── LinkedList/
 │
 ├── Cyclic_Sort.java
 ├── .gitignore
@@ -88,13 +89,9 @@ Graphs
 Dynamic Programming
 ```
 
-## 💻 Language
-
-**Java ☕**
-
-All implementations in this repository are primarily written in Java.
-
 ## 📈 Progress
+
+### ✅ Completed
 
 * [x] Java Methods
 * [x] Arrays
@@ -105,13 +102,17 @@ All implementations in this repository are primarily written in Java.
 * [x] Cyclic Sort
 * [x] Recursion
 * [x] OOP Basics
+* [x] Linked List
+
+### ⏳ Upcoming
+
 * [ ] Hashing
-* [ ] Linked List
 * [ ] Stack & Queue
 * [ ] Trees
 * [ ] Binary Search Tree
-* [ ] Heap
+* [ ] Heap / Priority Queue
 * [ ] Graphs
+* [ ] Backtracking
 * [ ] Dynamic Programming
 
 ## 🧠 Practice Strategy
@@ -123,6 +124,12 @@ For each topic, my approach is:
 3. Understand the time and space complexity.
 4. Solve problems based on the concept.
 5. Review mistakes and improve the implementation.
+
+## 💻 Language
+
+**Java ☕**
+
+All implementations in this repository are primarily written in Java.
 
 ## 🔥 Goal
 
