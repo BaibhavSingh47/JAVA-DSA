@@ -1,19 +1,18 @@
-class ListNode{
+class ListNode {
     int val;
     ListNode next;
     ListNode prev;
-    ListNode(int val){
-        this.val=val;
+
+    ListNode(int val) {
+        this.val = val;
     }
 }
-class DLL{
+
+class DLL {
 
 }
 
-
-
-
-class DoublyLinkedListClass {
+public class DoublyLinkedListClass {
     public static void main(String[] args) {
         System.out.println("Hello");
     }
