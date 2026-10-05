@@ -29,7 +29,7 @@ class DLL {
             head = tail = temp;
         else {
             tail.next=temp;
-            temp.prev=temp;
+            temp.prev=tail;
             tail=temp;
         }
         size++;
@@ -37,7 +37,7 @@ class DLL {
     void display(){
         ListNode temp=head;
         while(temp!=null){
-            System.out.println(temp.val+" ");
+            System.out.print(temp.val+" ");
             temp=temp.next;
         }
         System.out.println();
@@ -46,8 +46,8 @@ class DLL {
     void displayReverse() {
         ListNode temp = tail;
         while (temp != null) {
-            System.out.println(temp.val + " ");
-            temp = temp.next;
+            System.out.print(temp.val + " ");
+            temp = temp.prev;
         }
         System.out.println();
     }
@@ -56,6 +56,15 @@ class DLL {
 public class DoublyLinkedListClass {
     public static void main(String[] args) {
         DLL list=new DLL();
-        System.out.println("Hello");
+        list.insertAtHead(10);
+        list.insertAtHead(20);
+        list.insertAtHead(30);
+        list.display();
+        list.insertAtTail(40);
+        list.display();
+        list.displayReverse();
+        // list.deleteAtHead();
+        // list.deleteAtTail();
+        // list.display();
     }
 }
