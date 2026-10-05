@@ -30,10 +30,26 @@ class DLL {
         else {
             tail.next=temp;
             temp.prev=temp;
-            temp.next=null;
             tail=temp;
         }
         size++;
+    }
+    void display(){
+        ListNode temp=head;
+        while(temp!=null){
+            System.out.println(temp.val+" ");
+            temp=temp.next;
+        }
+        System.out.println();
+    }
+    
+    void displayReverse() {
+        ListNode temp = tail;
+        while (temp != null) {
+            System.out.println(temp.val + " ");
+            temp = temp.next;
+        }
+        System.out.println();
     }
 }
 
