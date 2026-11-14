@@ -103,11 +103,11 @@ Dynamic Programming
 * [x] Recursion
 * [x] OOP Basics
 * [x] Linked List
+* [x] Stack & Queue
 
 ### ⏳ Upcoming
 
 * [ ] Hashing
-* [x] Stack & Queue
 * [ ] Trees
 * [ ] Binary Search Tree
 * [ ] Heap / Priority Queue
