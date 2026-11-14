@@ -107,7 +107,7 @@ Dynamic Programming
 ### ⏳ Upcoming
 
 * [ ] Hashing
-* [ ] Stack & Queue
+* [x] Stack & Queue
 * [ ] Trees
 * [ ] Binary Search Tree
 * [ ] Heap / Priority Queue
