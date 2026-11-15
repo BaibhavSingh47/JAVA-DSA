@@ -16,8 +16,8 @@ public class RemoveNodesFromLinkedList {
         Stack<ListNode> st = new Stack<>();
         ListNode temp = head;
         while (temp != null) {
-            while (st.size() > 0 && st.peek().val < temp.val)
-                st.pop();
+            while (st.size() > 0 && st.peek().val < temp.val){
+                st.pop();}
             st.push(temp);
             temp=temp.next;
         }
