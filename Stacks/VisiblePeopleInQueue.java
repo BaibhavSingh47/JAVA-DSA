@@ -16,6 +16,7 @@ class Solution {
             ans[i] = count;
             st.push(arr[i]);
         }
+        
         return ans;
     }
 } 
