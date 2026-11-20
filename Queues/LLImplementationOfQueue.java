@@ -6,9 +6,9 @@ public class LLImplementationOfQueue {
         q.add(10);
         q.add(20);
         q.add(30);
-        q.add(40);
-        q.display();
-        System.out.println(q.remove());
-        q.display();
+        // q.add(40);
+        // q.display();
+        // System.out.println(q.remove());
+        // q.display();
     }
 }
