@@ -10,6 +10,11 @@ class Node {
 
 public class Implementation {
     public static void main(String[] args) {
+          //        3
+        //      /   \
+        //     4     2
+        //   /   \ /   \
+        // -1    1 6    9
         Node a = new Node(3);
         Node b = new Node(4);
         Node c = new Node(2);
