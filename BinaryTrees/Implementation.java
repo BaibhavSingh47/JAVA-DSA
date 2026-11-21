@@ -56,6 +56,7 @@ public class Implementation {
 //        System.out.println(product(a));
 // System.out.println(nonZeroProduct(a));
 //        System.out.println(max(a));
+    //    System.out.println(min(a));
 //        System.out.println(levels(a));
     }
 
@@ -110,19 +111,23 @@ public class Implementation {
 //        if(root==null) return 0;
 //        return root.val + sum(root.left) + sum(root.right);
 //    }
-    private static int product(Node root){
-        if(root==null) return 1;
-        return root.val*product(root.left)*product(root.right);
-    }
-    private static int nonZeroProduct(Node root){
-        if(root==null || root.val==0) return 1;
-        return root.val*nonZeroProduct(root.left)*nonZeroProduct(root.right);
+    // private static int product(Node root){
+    //     if(root==null) return 1;
+    //     return root.val*product(root.left)*product(root.right);
+    // }
+    // private static int nonZeroProduct(Node root){
+    //     if(root==null || root.val==0) return 1;
+    //     return root.val*nonZeroProduct(root.left)*nonZeroProduct(root.right);
         
-    }
+    // }
 //    private static int max(Node root) {
 //        if(root==null) return Integer.MIN_VALUE;
 //        return Math.max(root.val,Math.max(max(root.left),max(root.right)));
 //    }
+// private static int min(Node root) {
+// if(root==null) return Integer.MAX_VALUE;
+// return Math.min(root.val,Math.min(min(root.left),min(root.right)));
+// }
 //
 //    private static void preorder(Node root) {
 //        if(root==null) return;
@@ -142,7 +147,6 @@ public class Implementation {
 //        postorder(root.right);
 //        System.out.print(root.val+" ");
 //    }
-
 
 
 
