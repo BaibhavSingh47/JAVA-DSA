@@ -13,9 +13,9 @@ class Solution {
         }
 
         // re arrangement
-        // while (st.size() > 0) {
-        //     q.add(st.pop());
-        //     q.add(q.remove());
+        while (st.size() > 0) {
+            q.add(st.pop());
+            q.add(q.remove());
         }
 
         // reverse the q
