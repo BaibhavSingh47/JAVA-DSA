@@ -53,6 +53,8 @@ public class Implementation {
 //        System.out.println();
 //        System.out.println(size(a));
 //        System.out.println(sum(a));
+//        System.out.println(product(a));
+// System.out.println(nonZeroProduct(a));
 //        System.out.println(max(a));
 //        System.out.println(levels(a));
     }
@@ -62,6 +64,7 @@ public class Implementation {
         if(level==k) System.out.print(root.val+" ");
         kThLevel(root.left,level+1,k);
         kThLevel(root.right,level+1,k);
+        
     }
     private static void levelOrderLineWise(Node root) {
         Queue<Pair> q = new LinkedList<>();
@@ -89,6 +92,7 @@ public class Implementation {
             System.out.print(front.val+" ");
             if(front.left!=null) q.add(front.left);
             if(front.right!=null) q.add(front.right);
+            
         }
         System.out.println();
     }
@@ -106,6 +110,15 @@ public class Implementation {
 //        if(root==null) return 0;
 //        return root.val + sum(root.left) + sum(root.right);
 //    }
+    private static int product(Node root){
+        if(root==null) return 1;
+        return root.val*product(root.left)*product(root.right);
+    }
+    private static int nonZeroProduct(Node root){
+        if(root==null || root.val==0) return 1;
+        return root.val*nonZeroProduct(root.left)*nonZeroProduct(root.right);
+        
+    }
 //    private static int max(Node root) {
 //        if(root==null) return Integer.MIN_VALUE;
 //        return Math.max(root.val,Math.max(max(root.left),max(root.right)));
