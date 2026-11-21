@@ -22,6 +22,8 @@ public class TraversalInQueue {
         q.add(50);
         display(q);
         addAtIndex(q, 2, 60);
+        peek(q,2);
+        remove(q,2);
         display(q);
     }
 
@@ -43,12 +45,44 @@ public class TraversalInQueue {
     }
 
     private static int peek(Queue<Integer> q, int idx) {
-        // complete it yourself
-        return -1;
+        if (idx < 0 || idx >= q.size()) {
+            System.out.println("Invalid Index!");
+            return -1;
+        }
+
+        int n = q.size();
+
+        for (int i = 0; i < idx; i++) {
+            q.add(q.remove());
+        }
+
+        int x = q.peek();
+
+        for (int i = 0; i < n - idx; i++) {
+            q.add(q.remove());
+        }
+
+        return x;
     }
 
     private static int remove(Queue<Integer> q, int idx) {
-        // complete it yourself
-        return -1;
+        if (idx < 0 || idx >= q.size()) {
+            System.out.println("Invalid Index!");
+            return -1;
+        }
+
+        int n = q.size();
+
+        for (int i = 0; i < idx; i++) {
+            q.add(q.remove());
+        }
+
+        int x = q.remove();
+
+        for (int i = 0; i < n - idx - 1; i++) {
+            q.add(q.remove());
+        }
+
+        return x;
     }
 }
