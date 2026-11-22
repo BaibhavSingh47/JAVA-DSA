@@ -102,6 +102,7 @@ public class Implementation {
 //        if(root==null) return 0;
 //        return 1 + Math.max(levels(root.left),levels(root.right));
 //    }
+
 //    private static int size(Node root) {
 //        if(root==null) return 0;
 //        // if(root.left==null && root.right==null) return 1;
@@ -120,34 +121,36 @@ public class Implementation {
     //     return root.val*nonZeroProduct(root.left)*nonZeroProduct(root.right);
         
     // }
+
 //    private static int max(Node root) {
 //        if(root==null) return Integer.MIN_VALUE;
 //        return Math.max(root.val,Math.max(max(root.left),max(root.right)));
 //    }
+
 // private static int min(Node root) {
 // if(root==null) return Integer.MAX_VALUE;
 // return Math.min(root.val,Math.min(min(root.left),min(root.right)));
 // }
-//
+
 //    private static void preorder(Node root) {
 //        if(root==null) return;
 //        System.out.print(root.val+" ");
 //        preorder(root.left);
 //        preorder(root.right);
 //    }
+
 //    private static void inorder(Node root) {
 //        if(root==null) return;
 //        inorder(root.left);
 //        System.out.print(root.val+" ");
 //        inorder(root.right);
 //    }
+
 //    private static void postorder(Node root) {
 //        if(root==null) return;
 //        postorder(root.left);
 //        postorder(root.right);
 //        System.out.print(root.val+" ");
 //    }
-
-
-
+ 
 }
